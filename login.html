@@ -4,15 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
+    
+    
+    <style>
+        
+        body{
+            margin:0%;
+            background-image: url("https://static.vecteezy.com/system/resources/thumbnails/049/855/347/small_2x/nature-background-high-resolution-wallpaper-for-a-serene-and-stunning-view-photo.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            
+            }
+        
+        .login-container {
+            width: 25%;
+            margin: auto;
+            
+            margin-top: 10%;
+            background-color: rgba(255, 255, 255 , 0.15);
+            backdrop-filter:blur(5px); ;
+            padding: 0px 20px 20px 20px;
+            text-align: center;
+            color: white;
+            border: 1px solid white;
+            border-radius: 10px;
+            
+        }
+        .login-container *{
+            margin: 0px 10px 6px 10px;
+        }
+    
+        
+        .login-container h2{
+            font-family: sans-serif;
+            font-weight: bold;
+            color: white;
+        }
+        .form-field input{
+            background-color: transparent;
+           width: 95%; 
+           padding: 10px;
+           border: none;
+           outline: none;
+           border-bottom-style: solid;
+           border-width: 2px;
+        }
+
+        .form-field input::placeholder{
+            color: white;
+        }
+      
+        .login-container a{
+            text-decoration: none;
+            color: white;
+        }   
+        
+        .login-btn button{
+            width: 97%;
+            background-color: white;   
+            color: black;
+            border: none;
+            padding: 10px;
+        
+        }
+
+    </style>
 </head>
 <body>
-    <form action="./index.html">
-        <h1 align="center"> welcome to the login page</h1>
-        <p align="center"> plese fill in the formbelow to login.</p>
-        <p align="center">username/email:<input type="email" placeholder="enter your username or email"name="email" id"email" required></p>
-        <p align="center">password: <input type="password" placeholder="enter your password" name="password" id="password" required></p>
-        <p align="center"><button>login</button></p>
-    </form>
+
+ <form action="index.html"class="login-container">
+<h2>Login Form</h2>
+<div class="form-field">
+    <input type="email" placeholder="Enter your email" name="email" id="email"required >
+</div>
+<div class="form-field">
+    <input type="password" placeholder="Enter your Password" name="password" id="password"required >
+</div>
+<div class="form-checkbox">
+   <input type="checkbox" name="remember"><label for="remember">Remember me</label>
+    <a href="#">Forgot Password?</a>
+</div>
+<div class="login-btn">
+    <button>Login</button>
+</div>
+<div class="register-link">
+    <p> <span>Don't have an account? <a href="#">Register</a> </span></p>
+</div>
 
 </body>
 </html>
+
+
+
+    
+

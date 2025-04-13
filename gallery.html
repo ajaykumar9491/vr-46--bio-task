@@ -4,24 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            background-color: yellowgreen;
+            font-family: Arial, sans-serif;
+        }
+        h2 {
+            color: black;
+            text-align: center;
+            margin-top: 20px;
+
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            font-size: 3rem;
+            text-decoration: underline;
+            font-family: 'Courier New', Courier, monospace;
+        
+        }
+        img {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+        
+    </style>
 </head>
 <body>
-    <h2 id="gallery">Gallery</h2>
-<img width="300"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-iZ1IKuZiKey4Vtx4LK87Nzb5EeKM32KITA&s"alt""/>
-<img width="300"src="https://cdn.dribbble.com/userupload/24336112/file/original-cb16bef5703a561fad9e71e3f179a1ba.png?format=webp&resize=400x300&vertical=center"alt""/>
-<img width="300"src="https://mir-s3-cdn-cf.behance.net/project_modules/hd/f1188342750531.57d68dce5b062.jpg"alt""/>
-<img width="300"src="https://seeklogo.com/images/V/vr-46-logo-B3636091F0-seeklogo.com.png"alt""/>
-<img width="300"src="https://i.pinimg.com/originals/f9/87/b2/f987b2ef28c518d615c7ea647e864f89.png"alt""/>
-<img width="300"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwpBjWwYw1m14uk3Hm-VYR5-i6WDX8lKzxnQ&s"alt""/>
-<img width="300"src="https://mir-s3-cdn-cf.behance.net/projects/404/7a519b216642589.Y3JvcCw0NTAxLDM1MjAsMCwxMDQ3.png"alt""/>
-<img width="200"src="https://i.pinimg.com/236x/93/ec/9b/93ec9bd9154a1846f21aaadd320881d3.jpg"alt""/>
-<img width="300"src="https://i.pinimg.com/236x/d8/f6/9d/d8f69d3744dd2103be75a0e1460ab10f.jpg"alt""/>
-<img width="300"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS9fVzR8oVSjdEdzDJ69_fufhmBAvpesdUbA&s"alt""/>
-<img width="300"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv0LC7jbXy2g2BiqkELdx9npEw8quTTdKMAg&s"alt""/>
-<img width="300"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOye9pDIFFHoy94cMNNbVBoNAADniRXaYeQA&s"alt""/>
-<img width="300"src="https://i.pinimg.com/236x/ee/e6/79/eee67951919d4ad7ccb8ebc63f122de4.jpg"alt""/>
-<img width="300"src="https://mir-s3-cdn-cf.behance.net/projects/404/fdace5198465745.Y3JvcCwyNTAwLDE5NTUsMCwyNzI.png"alt""/>
-<img width="300"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy959vbIp4nlYS0zKrWm5jfJxEtMLyMGyLWg&s"alt""/>
+    <h2 align="center" class="gallery" id="gallery">Gallery</h2>
+
+<img width="200px"src="https://i.pinimg.com/736x/cc/a3/e4/cca3e4f032e999e7980a0380a2f75452.jpg"alt""/>
+<img width="200px"src="https://i.pinimg.com/736x/52/16/7a/52167aec89bc66e5aed5c5449a894b74.jpg"alt""/>
+<img width="200px"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqWXdjQ6XCLbmN5fz8lTaCPzhy7cdc9GgEDc-jJ_awFOEhITxL7n0SRQ4hHKOaKjmv6Iw&usqp=CAU"alt""/>
+<img width="200px"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtlaedA4tbs9jffYcQcMhjJjG4K8ks7Nsc9ime8zKf3Uw8C9OKdmUMUVHM33pDZ_DYZtM&usqp=CAU"alt""/>
+<img width="200px"src="https://i.pinimg.com/736x/d8/10/1e/d8101e6e9fc061b72872c2779efdbd7f.jpg"alt""/>
+<img width="200px"src="https://w0.peakpx.com/wallpaper/766/791/HD-wallpaper-vr-46-rossi-stoppie-motorcycle-motors-petronas-racing-valentino-vr46-yamaha.jpg"alt""/>
+<img width="200px"src="https://w0.peakpx.com/wallpaper/766/791/HD-wallpaper-vr-46-rossi-stoppie-motorcycle-motors-petronas-racing-valentino-vr46-yamaha.jpg"alt""/>
+<img width="200px"src="https://cdn.pixabay.com/photo/2016/01/07/19/46/valentino-rossi-1126411_640.jpg"alt""/>
+<img width="200px"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7Sb0CZoe_P7LZuFKyPL-EwQ4dljWN1ernQA&s"alt""/>
+<img width="200px"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPE2V-x35NNXf4lVCyj4aipnWCxfDUYhVdGfyKIjKnYcbA_fvO88A31IOXBEIqhaXej2Q&usqp=CAU"alt""/>
+<img width="200px"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLhW7-XmH_JPqvMSXspZV574ioO17tOSbNdA&s"alt""/>
+<img width="200px"src="https://i.pinimg.com/236x/55/a6/e6/55a6e61ca7246c3371b783a01aa6ad09.jpg"alt""/>
+<img width="200px"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0bWMAHO9Sc75jIfJoYY8C6uRWprBt41b2vg&s"alt""/>
+<img width="200px"src="https://m.media-amazon.com/images/I/51eoykg3eHL.jpg"alt""/>
+<img width="200px"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFMUxOXepzcoRGi3A2ryGtZIgqIHfiQFlg5Q&s"alt""/>
+<img width="200px"src="https://wallpapercave.com/wp/wp1868594.jpg"alt""/>
+<img width="200px"src="https://media.gettyimages.com/id/457471194/photo/phillip-island-australia-valentino-rossi-of-italy-rider-of-the-movistar-yamaha-motogp-yamaha.jpg?s=612x612&w=gi&k=20&c=FRBN0KOPKg6FH0O7vGGi5mkGUbD7cS9-VsnsGa6YznE="alt""/>
+<img width="200px"src="https://media.gettyimages.com/id/1348569127/photo/misano-adriatico-italy-valentino-rossi-of-italy-and-petronas-yamaha-srt-celebrates-his-last.jpg?s=612x612&w=gi&k=20&c=P5kBKKFlsEJpaQRBzFxbjllzvSAtBAPv5nhHmWlhNPY="alt""/>
+<img width="200px"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaVNfr_7wWJuQ77kaaAYP52K1V-ly6GCr-WzkEd09q50sJHSS-2-G0aQeU_ob8yw2t9vY&usqp=CAU"alt""/>
 
 </body>
 </html>
