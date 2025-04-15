@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration</title>
+
+    <style>
+        
+        body{
+            margin:0%;
+            background-image: url("https://static.vecteezy.com/system/resources/thumbnails/049/855/347/small_2x/nature-background-high-resolution-wallpaper-for-a-serene-and-stunning-view-photo.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            
+            }
+            .text-area{
+                font-size: 15px;
+            }
+        
+        .login-container {
+            width: 30%;
+            margin: auto;
+            margin-top: 2%;
+            background-color: rgba(255, 255, 255 , 0.15);
+            backdrop-filter:blur(3px); ;
+            padding: 20px 20px 20px 20px;
+            text-align: center;
+            color:black;
+            border: 2px solid rgb(89, 33, 33);
+            border-radius: 10px;
+            
+        }
+        .login-container *{
+            margin: 1px 10px 6px 10px;
+        }
+    
+        
+        .login-container h1{
+            font-family: sans-serif;
+            font-weight: bold;
+            color: white;
+        }
+        .form-field input{
+         background-color:transparent;
+           width: 95%; 
+           padding: 10px;
+           border: none;
+           outline: none;
+           border-bottom-style: solid;
+           border-width: 2px;
+        }
+
+        .form-field input::placeholder{
+            color: white;
+        }
+        .check-box input {
+            
+            margin: 10px 0px 10px 0px;
+            background-color: transparent;
+            font-size: 13px;
+
+        }
+        .check-box label{
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+            font-size: 15px;
+            text-decoration: underline;
+            
+            
+        }
+        .check-box{
+            margin: 10px 0px 10px 0px;
+            background-color: transparent;
+            font-size: 13px;
+        }
+      
+        .login-container a{
+            text-decoration: none;
+            color: white;
+        }   
+        
+        .login-btn button{
+            width: 80%;
+            background-color: white;   
+            color: black;
+            font-size: 15px;
+            
+            padding: 10px;
+        
+        }
+
+    </style>
+</head>
+<body>
+    
+    <form action="./blog.html" class="login-container" >
+
+        <h1> welcome to tne registration page</h1>
+        
+        <div class="form-field">
+             <input type="name" placeholder="enter your name" name="name" id="name"required>
+            </div>
+        <div class="form-field">
+            <input type="email" placeholder="enter your email" name="email"id="email" required>
+        </div>
+        <div class="form-field">
+            <input type="password" placeholder="comfirm your pasword" name="comfirm_password" id="comfirm_password"required>
+        </div>
+        <div class="check-box">
+            <input type="radio" id="male" name="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="male">
+            <label for="femle">Female</label>
+        </div>
+        <div class="form-field">
+            <input type="number" placeholder="enter your phone number" name="mobile_number" id="phone" required>
+        </div>
+        <div class="check-box">
+            <label for="data"> Date of Birth:</label>
+            <input type="date" required>
+        </div>
+        <div class="text-area">
+            <textarea name="address" id="address" placeholder="enter your address" required></textarea>
+        </div>
+        <div class="login-btn">
+            <button>submit</button>
+        </div>
+        
+    </form>
+</body>
+</html>
